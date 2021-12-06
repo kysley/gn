@@ -7,8 +7,8 @@
 
 ```bash
 Usage:
-<sleep|zzz> [duration] 
+> sleep [duration] 
 
-> zzz 25
+> sleep 25
 # -> Computer hibernates after 25 mins
 ```
