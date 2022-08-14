@@ -9,9 +9,9 @@ import (
 func main() {
 
 	app := &cli.App{
-		Name:        "Zzz",
-		Description: "I'm feeling sleepy...",
-		Commands:    []*cli.Command{zzzCommand()},
+		Name:        "gn",
+		Description: "goodnight, get some rest",
+		Commands:    []*cli.Command{gnCommand()},
 	}
 	app.Run(os.Args)
 }

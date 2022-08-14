@@ -1,14 +1,15 @@
-# zzz
+# gn
 💤 It's getting late..
 
-`git clone https://github.com/kysley/zzz`
+`git clone https://github.com/kysley/gn`
 ` go install`
 
 
 ```bash
 Usage:
-> sleep [duration] 
+> gn [duration in minutes]
 
-> sleep 25
+> gn 25
+> goodnight 25
 # -> Computer hibernates after 25 mins
 ```
