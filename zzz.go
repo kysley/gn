@@ -2,10 +2,7 @@ package main
 
 import (
 	"fmt"
-	"strconv"
 	"time"
-
-	"github.com/urfave/cli/v2"
 )
 
 func pluralize(num int, value string) string {
@@ -16,22 +13,14 @@ func pluralize(num int, value string) string {
 	}
 }
 
-func gnCommand() *cli.Command {
-	return &cli.Command{
-		Name:    "gn",
-		Aliases: []string{"goodnight"},
-		Action: func(c *cli.Context) error {
-			numMinutes, _ := strconv.Atoi(c.Args().First())
-			fmt.Printf("( ु⁎ᴗ_ᴗ⁎)ु.｡oO %d %s", numMinutes, pluralize(numMinutes, "minute"))
+func zzz(duration int) {
+	fmt.Printf("( ु⁎ᴗ_ᴗ⁎)ु.｡oO %d %s", duration, pluralize(duration, "minute"))
 
-			time.Sleep(time.Duration(numMinutes) * time.Minute)
+	time.Sleep(time.Duration(duration) * time.Minute)
 
-			cmd := sleep()
+	cmd := sleep()
 
-			if err := cmd.Run(); err != nil {
-				panic(err)
-			}
-			return nil
-		},
+	if err := cmd.Run(); err != nil {
+		panic(err)
 	}
 }
